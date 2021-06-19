@@ -3,11 +3,12 @@ function Master({ data }) {
 }
 
 export async function getServerSideProps(context) {
-    const res = await fetch('http://kuriz.oicp.io/master?pageNo=1&pageSize=30', { method: 'GET'});
-    const data = await res.json();
+    //const res = await fetch('http://kuriz.oicp.io/master?pageNo=1&pageSize=30', { method: 'GET'});
+    //const data = await res.json();
   
     // Pass data to the page via props
-    return { props: { data } };
+    //return { props: { data } };
+    return {};
 }
 
 export default Master;
